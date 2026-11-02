@@ -1,15 +1,79 @@
-Part 1: Explanatory Paragraph
-When you type a URL into your web browser (the client), it triggers a request-response cycle by sending an HTTP (Hypertext Transfer Protocol) or securely encrypted HTTPS request across the internet to the server where the website lives. For a static website, the server simply responds by sending pre-written HTML, CSS, and JavaScript files directly back to the client. However, if it is a dynamic website, the server first communicates with a database to retrieve specific, up-to-date data (like user profiles or live feeds) and builds the webpage on the fly before sending the final code back. Once the browser receives this response, it translates the code into the visual website that opens on your screen.
+Here is the complete solution for Assignment 3.1. You will need to create two separate HTML files in the same folder on your computer.
 
-Part 2: How to get your Screenshot
-To fulfill the second part of your assignment, you'll need to take a screenshot of the Network tab on your own computer. Here is exactly how to do it:
+File 1: index.html (The Home Page)
+Copy this code and save it as index.html. It includes the website name, an introduction, the navigation bar, and the external link with the required security attributes.
 
-Open Google Chrome and go to any website (e.g., wikipedia.org).
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Two-Page Website</title>
+</head>
+<body>
 
-Right-click anywhere on the page and select Inspect (or press Ctrl + Shift + I on Windows / Cmd + Option + I on Mac).
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="about.html">About</a>
+    </nav>
 
-In the panel that opens, click on the Network tab at the top. (If you don't see it, click the >> arrows to reveal hidden tabs).
+    <hr>
 
-With the Network tab open, refresh the page (F5 or Ctrl + R). You will see a waterfall of files (requests) loading in the panel.
+    <!-- Main Content: Name and Introduction -->
+    <main>
+        <h1>My Two-Page Website</h1>
+        <p>Welcome to my home page! This website is a simple demonstration of how to connect multiple HTML pages together using navigation links.</p>
 
-Take a screenshot of this entire window showing the list of network requests and save it to submit with your paragraph.
+        <!-- External Link with target and rel attributes -->
+        <p>Want to learn more about coding? Visit the 
+            <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>.
+        </p>
+    </main>
+
+</body>
+</html>
+File 2: about.html (The About Page)
+Copy this code and save it as about.html in the exact same folder as your index.html file. This ensures the links can find each other.
+
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - My Two-Page Website</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="about.html">About</a>
+    </nav>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+        <h1>About This Site</h1>
+        <p>This is the second page of my website. By clicking the "Home" link above, you will be taken right back to the main index page!</p>
+    </main>
+
+</body>
+</html>
+How to Prepare Your Submission:
+Test the Links: Double-click your saved index.html file to open it in your web browser (like Chrome or Safari).
+
+Verify Functionality:
+
+Click the About link to make sure it goes to the second page.
+
+Click the Home link to make sure it comes back.
+
+Click the MDN Web Docs link to verify it opens in a new tab securely.
+
+Take a Screenshot: While viewing the website in your browser, take a screenshot showing the page and the navigation bar.
+
+Submit: Zip your index.html and about.html files together, and upload them along with your screenshot to complete your assignment!
